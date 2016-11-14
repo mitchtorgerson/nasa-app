@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Test App</title>
+
+    <!-- CSS -->
+    <link href="js/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- LIB -->
+    <script src="js/lib/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/lib/angular.min.js" type="text/javascript"></script>
+    <script src="js/lib/angular-dragdrop.js" type="text/javascript"></script>
+    <script src="js/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- Main App -->
+    <script src="js/app.js" type="text/javascript"></script>
+
+    <!-- Services -->
+    <script src="js/services/TwitterSvc.js" type="text/javascript"></script>
+    <script src="js/services/MapSvc.js" type="text/javascript"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MapCtrl.js" type="text/javascript"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/TwitterFeed.js" type="text/javascript"></script>
+
+  </head>
+  <body ng-app="TestApp">
+    <div>
+
+      <div class="container-fluid">
+	<div class="row">
+	  <div class="col-md-6 noPadding">
+
+	    <twitter-feed />
+
+	  </div>
+	  <div class="col-md-6 noPadding">
+
+	    <div class="container-fluid" id="mapView" ng-controller="MapCtrl">
+
+	      <div class="row">
+		<div class="col-md-6" id="mapArea"></div>
+	      </div>
+	      
+	    </div>
+
+	  </div>
+	</div>
+      </div>
+      
+    </div>
+
+    <script>
+      function loadMap() {
+      angular.element('#mapView').scope().loadMap();
+      }
+    </script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?branch=release&callback=loadMap' async defer></script>
+  </body>
+</html>
+

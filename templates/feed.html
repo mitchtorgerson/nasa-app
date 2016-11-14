@@ -1,0 +1,15 @@
+<div class="container-fluid nopadding feedContainer">
+  <div class="toolbar">
+    <button ng-click="getFeed()" class="pull-right">Refresh Feed</button>
+  </div>
+  
+  <div class="row twitterRow" ng-repeat="row in statuses">
+    <div class="col-md-2 text-center date">
+      {{formatDate(row.created_at) | date:"MM/dd/yyyy h:mm:ssa"}}
+    </div>
+    <div class="col-md-10">
+      {{row.text}}
+    </div>
+  </div>
+</div>
+

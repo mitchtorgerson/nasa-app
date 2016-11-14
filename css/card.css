@@ -1,0 +1,108 @@
+body {
+    color: #444;
+    font-family: tahoma;
+}
+
+input, select, button {
+    height: 30px;
+    border-radius: 6px;
+    border: #999 1px solid;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.header {
+    margin: 0px 0px 20px 0px;
+    padding: 10px 20px;
+    box-shadow: 0px 10px 15px #aaaaaa;
+    border-bottom: #7795A4 1px solid;
+    height: 60px;
+    position: relative;
+    background: #A9BCC5;
+}
+
+.header .title {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 200%;
+    font-family: impact;
+    font-style: italic;
+}
+
+.header .actions {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.header .actions .add {
+    margin: 0px 25px;
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.card {
+    width: 300px;
+    height: 130px !important;
+    padding: 10px;
+    margin: 10px;
+    border: #aaa 1px solid;
+    border-radius: 0px 12px;
+    text-align: left;
+    display: inline-block;
+    cursor: move;
+    background: #eeeeee;
+    list-style-type: none;
+    box-shadow: 10px 10px 15px #aaaaaa;
+    position: relative;
+}
+
+.card input {
+    width: 136px;
+    font-size: 11px;
+    font-family: tahoma;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.card.add {
+    height: 210px !important;
+}
+
+.card .delete {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    cursor: pointer;
+}
+
+.card .name {
+    font-family: impact;
+    font-size: 120%;
+    width: 100%;
+    border-bottom: #444 3px solid;
+    font-style: italic;
+}
+
+.card .title {
+    text-align: right;
+    font-weight: bold;
+}
+
+.card .other {
+    font-size: 85%;
+}
+
+.card.active {
+    background: #eff8ff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eff8ff 0%, #a9bcc5 47%, #a9bcc5 55%, #eff8ff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eff8ff), color-stop(47%,#a9bcc5), color-stop(55%,#a9bcc5), color-stop(100%,#eff8ff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eff8ff 0%,#a9bcc5 47%,#a9bcc5 55%,#eff8ff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eff8ff 0%,#a9bcc5 47%,#a9bcc5 55%,#eff8ff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eff8ff 0%,#a9bcc5 47%,#a9bcc5 55%,#eff8ff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eff8ff 0%,#a9bcc5 47%,#a9bcc5 55%,#eff8ff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff8ff', endColorstr='#eff8ff',GradientType=0 ); /* IE6-9 */
+}

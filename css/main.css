@@ -1,0 +1,60 @@
+body {
+    color: #444;
+    font-family: 'Open Sans', 'sans-serif', 'Arial';
+    /*font-family: tahoma;*/
+    overflow: hidden;
+    background: #666;
+}
+
+.row {
+    background: #ffffff;
+}
+
+#mapArea {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#feedArea {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.twitterRow {
+    border-bottom: #ccc 1px solid;
+}
+
+.twitterRow div{
+    padding: 15px;
+}
+
+.twitterRow:hover{
+    background: #eeeeee;
+}
+
+.noPadding {
+    padding: 0px;
+}
+
+text {
+    stroke: #fff;
+    fill: #fff;
+}
+
+.feedContainer {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.toolbar {
+    height: 45px;
+    padding: 10px;
+    background: #333;
+}
